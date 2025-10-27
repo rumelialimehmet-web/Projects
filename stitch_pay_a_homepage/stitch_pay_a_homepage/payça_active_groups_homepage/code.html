@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça - Ana Sayfa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5348ea",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121121",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-200 dark:bg-black flex items-center justify-center min-h-screen">
+<div class="relative w-[375px] h-[812px] bg-background-light dark:bg-background-dark shadow-2xl rounded-xl overflow-hidden flex flex-col font-display group/design-root">
+<!-- Main Scrollable Content -->
+<main class="flex-1 overflow-y-auto pb-24">
+<div class="px-5">
+<!-- Header Greeting -->
+<h1 class="text-[#111827] dark:text-gray-100 text-2xl font-semibold pt-8 pb-4">Merhaba, Ahmet 👋</h1>
+<!-- Balance Overview Card -->
+<div class="bg-white dark:bg-background-dark dark:border dark:border-gray-700 rounded-xl p-5 shadow-[0_4px_16px_rgba(0,0,0,0.05)]">
+<div class="flex justify-around items-center text-center">
+<div class="flex-1">
+<p class="text-sm text-gray-500 dark:text-gray-400">Alacaklısın</p>
+<p class="text-green-500 text-2xl font-bold mt-1">+425₺</p>
+</div>
+<div class="w-px h-10 bg-gray-200 dark:bg-gray-700 mx-2"></div>
+<div class="flex-1">
+<p class="text-sm text-gray-500 dark:text-gray-400">Borçlusun</p>
+<p class="text-red-500 text-2xl font-bold mt-1">-150₺</p>
+</div>
+</div>
+<p class="text-center text-xs text-gray-400 dark:text-gray-500 mt-3">3 grup</p>
+</div>
+<!-- Quick Actions -->
+<div class="py-8">
+<div class="flex gap-3 overflow-x-auto pb-2 -mx-5 px-5" style="scrollbar-width: none; -ms-overflow-style: none;">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-4 pr-4">
+<span class="material-symbols-outlined text-white text-lg">add</span>
+<p class="text-white text-sm font-medium">Harcama Ekle</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 pl-4 pr-4">
+<p class="text-[#111827] dark:text-gray-200 text-sm font-medium">+ Yeni Grup</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 pl-4 pr-4">
+<p class="text-[#111827] dark:text-gray-200 text-sm font-medium">Tüm Bakiyeler</p>
+</button>
+</div>
+</div>
+<!-- Groups Section Header -->
+<div class="flex justify-between items-center pb-4">
+<h2 class="text-[#111827] dark:text-gray-100 text-lg font-semibold">Aktif Gruplar</h2>
+<a class="text-primary text-sm font-medium" href="#">Tümü &gt;</a>
+</div>
+<!-- Group Cards List -->
+<div class="flex flex-col gap-4">
+<!-- Group Card 1 -->
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-gray-700 p-5 shadow-[0_4px_16px_rgba(0,0,0,0.05)]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-[#111827] dark:text-gray-100 text-base font-semibold">🏖️ Tatil Gezisi</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Toplam: 1250₺</p>
+</div>
+<div class="flex -space-x-2">
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="User avatar 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpf7skRHjWiYb5qsWiD54-5aSwgTXS3KB-_A-85rzW_bG58-kgvm39bpAGdWl5moyWqq4SbrgryYF5y88DN_W2Qi8j4RoYh3u3mCrLNJUV51w2d8jMXpZhhBpD5aAl6LjtuKrez9AdVIv_PpvSA2Eas3SNpqm3Jf1LJkKwObBz8uZqtSu1nyBHQamMgC0ZZaEg93JVmL6kbJeMMArClub4dixZgJfq_bQEFXikdpOx3sPPfQI4lcF7gmqlDt9hBmY3ljV-9HUSamJQ"/>
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="User avatar 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA59tSNSA3RVlLSqDi-5YVnISMotkljGyYEmGSetfnRIwQlU9fcU0y1J7Q3S8cV32gvJ9f8PG3QxUMhIWtTshjKwUOWBbZHSEcnL9I6ZlMef5plqavwyGcR6-L3eLoWAPYkJND9qr4fEoJemg5lU73LY4m9bviyF9FaRIOFBQOvx3k-8kmsVww0wN-iUuM4-omIkxrFhK_lN6Vw7YqpUfSb5gLWuLatKVBL3BjBPITOoiRBcdFP2agFoZVoxUoVhC5OtEjr6uUwIx4M"/>
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="User avatar 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMm4bfdBVWwWAqXTdQ4AWwIq5y2h6H7_7kafffcBG9weMxbizkeYtPsu0hyEJzHGdRdjH4O0leuS8SDcxkvSf_9C5RoRtHjSex_Z4jQXKO0ULQAtHDbfIHfImdT5g18wY-m5ndZpqBLqdBcZl0t8NgJJNpbI1DgPYsjGOilp6i0wrMLreo3mHQdUX7uznvw59sW2NRNJcV-Y8nOBUr_ZqUPn6fXOCjjxuoHdR_ricmLj5TrYFwIuvO1cAm_yRMzRL05syx3Ggh_vaB"/>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center justify-center rounded-full h-7 px-3 bg-red-100 dark:bg-red-500/20">
+<span class="text-red-600 dark:text-red-400 text-xs font-medium">Borçlusun: 50₺</span>
+</div>
+<p class="text-gray-400 dark:text-gray-500 text-xs">Son güncelleme: 2s önce</p>
+</div>
+<div class="border-t border-gray-100 dark:border-gray-700 pt-3 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+<span>İstanbul, TR</span>
+<span>15.10.2023</span>
+</div>
+</div>
+<!-- Group Card 2 -->
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-gray-700 p-5 shadow-[0_4px_16px_rgba(0,0,0,0.05)]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-[#111827] dark:text-gray-100 text-base font-semibold">🍕 Pizza Akşamı</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Toplam: 380₺</p>
+</div>
+<div class="flex -space-x-2">
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="User avatar 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbihSvs3AR_mNClqAmU0DGu1Xh32VIOUaF1Wj4cK6Nu12koH3tjOwUcpVSq7irLCRfj9R0znF6LSUKr7HTjZQjl1__mIGw51oaiuUhklhJUceCEpjc3XQBGLUQuUscxTJ0oZeFAyA5cEQxkCLiNfTJ1yd4Ug-whmWP8EPEVu6jeo1uAkd4FjuDgLDexNmx2tWfFUsuTAncJkI1uNt1guwfsUoJkNt7OInxx_S2hq-sB-7uHwZ4N-IW1ECu8vD9Pj4MwEPyRJBffEsG"/>
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="User avatar 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA5KQVYiiKnsE8JiPC3eZ0ZrYeqgopBrTEnZERFGQ8xGK656ijPoliAn9It7PnZb9GlaUoo8k2kWiUVzFb6wAP5LyKr4OxjoUZJ_R8YRky7OpgWetpyv7uLp-DO4b6St25MATL5A-eIjuGHiAS2izhnGymbS0sZ1E7DxkPvn-g8B5ZPVNVNf_y9OU5aYho8ldxAhZCi_sYB4qLONGr6p2eqFdtWo_PUyAc00TPcFF97F9TDjUxDXphu4Uj6cPenOmElEA1mPoVMSk2"/>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center justify-center rounded-full h-7 px-3 bg-green-100 dark:bg-green-500/20">
+<span class="text-green-600 dark:text-green-400 text-xs font-medium">Alacaklısın: 120₺</span>
+</div>
+<p class="text-gray-400 dark:text-gray-500 text-xs">Son güncelleme: 1g önce</p>
+</div>
+<div class="border-t border-gray-100 dark:border-gray-700 pt-3 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+<span>Ankara, TR</span>
+<span>13.10.2023</span>
+</div>
+</div>
+<!-- Group Card 3 -->
+<div class="flex flex-col gap-4 rounded-lg bg-white dark:bg-background-dark dark:border dark:border-gray-700 p-5 shadow-[0_4px_16px_rgba(0,0,0,0.05)]">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-[#111827] dark:text-gray-100 text-base font-semibold">🏠 Ev Kirası</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm">Toplam: 4500₺</p>
+</div>
+<div class="flex -space-x-2">
+<img class="inline-block h-6 w-6 rounded-full ring-2 ring-white dark:ring-background-dark" data-alt="User avatar 6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4N-vTUa28UbSVgrheAJWUJk-LreJlK9_weSpcRs7jOxKRU96a5AtoW18y6vFSYBzlkzs9jzJ4J22Be-f4oFQAgEkNA9LMoh9OGROUb_TI-JZMIdiDlM7dVsJEHtsmHYdzbkrDgBU-7Zs3zFU0Vay2m1p_oTtW1xqHulQSRsDCW6PnCvN0Q-J4yf6qrZwEH3eRm3nj10mN7pD7SlZHqQnbq29OKIbgqjFVLkQ3ADom_WaiUlvsNxicu44N7aeyny2oCfzRCRL2a9VZ"/>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center justify-center rounded-full h-7 px-3 bg-gray-100 dark:bg-gray-700">
+<span class="text-gray-600 dark:text-gray-300 text-xs font-medium">Ödeşildi</span>
+</div>
+<p class="text-gray-400 dark:text-gray-500 text-xs">Son güncelleme: 5g önce</p>
+</div>
+<div class="border-t border-gray-100 dark:border-gray-700 pt-3 flex items-center justify-between text-xs text-gray-400 dark:text-gray-500">
+<span>İzmir, TR</span>
+<span>10.10.2023</span>
+</div>
+</div>
+<!-- View All Groups Card -->
+<div class="flex items-center justify-center rounded-lg border-2 border-dashed border-gray-300 dark:border-gray-600 p-5 h-[96px]">
+<button class="text-primary font-semibold text-sm">Tüm Grupları Gör</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="absolute bottom-0 left-0 right-0 h-24 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 flex justify-around items-center pt-2 pb-6">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined filled">home</span>
+<span class="text-xs font-medium">Ana Sayfa</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-xs font-medium">Gruplar</span>
+</a>
+<button class="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-indigo-700 text-white shadow-lg -translate-y-6 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl">add</span>
+</button>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs font-medium">Aktivite</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profil</span>
+</a>
+</nav>
+</div>
+</body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5348ea",
+            "background-light": "#f6f6f8",
+            "background-dark": "#121121",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .cta-shadow {
+      box-shadow: 0px 10px 20px -5px rgba(83, 72, 234, 0.4);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative mx-auto flex h-[812px] w-full max-w-[375px] flex-col overflow-hidden bg-background-light dark:bg-background-dark group/design-root">
+<!-- Header Section -->
+<div class="px-6 pt-[60px]">
+<h2 class="font-display text-[28px] font-semibold leading-tight tracking-tight text-[#1F2937] dark:text-white">Merhaba! 👋</h2>
+<p class="font-display mt-2 text-base font-normal leading-normal text-[#6B7280] dark:text-gray-400">Payça ile grup harcamalarını yönetmeye başla</p>
+</div>
+<!-- Main Content -->
+<main class="flex flex-1 flex-col items-center justify-center px-6">
+<!-- Empty State Illustration & Text -->
+<div class="flex flex-col items-center gap-6">
+<div class="h-[240px] w-[280px] bg-center bg-no-repeat bg-contain" data-alt="3D illustration of three diverse people collaborating around a giant smartphone displaying an expense tracking app interface, with floating receipt and coin icons, rendered in a friendly, vibrant color palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0OFw0JdQ612nyGZSirAaZgMoFOocLbWpQ2axAQO80XRm35Bwe10sX8wTVSM6WT38HuuIYUfKUfZ1_Gy_3cRBQSUa19fipcN-oBU1y20jjlNfPehMYFoYmSwI8Mvnpz-I7b4OCZg28fzsAFnm5jwamRYdYYtesNvGsUTdRFRBR6ZVczTg-4-F8GEvH4kuqeRT5BqjcCKn3aXOrtf-Ufsld57l9NueBAt7yELGTOAyNjA7nOF8rNfN4u--qr33rK6wDU80kSK8u7uUb');"></div>
+<div class="flex max-w-[280px] flex-col items-center gap-2 text-center">
+<p class="font-display text-xl font-semibold leading-tight text-[#111827] dark:text-white">Henüz Hiç Grubun Yok</p>
+<p class="font-display text-sm font-normal leading-normal text-[#6B7280] dark:text-gray-400">Bir grup oluştur, arkadaşlarını ekle ve masrafları paylaşmaya başla</p>
+</div>
+</div>
+</main>
+<!-- Actions Section -->
+<div class="flex flex-col items-center gap-4 px-6 pb-6">
+<button class="cta-shadow flex h-14 w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-[#6366F1] to-[#4F46E5] text-white">
+<span class="material-symbols-outlined text-white" data-icon="Plus" data-size="24px" data-weight="regular">add</span>
+<span class="truncate font-display text-base font-semibold leading-normal">İlk Grubunu Oluştur</span>
+</button>
+<a class="flex cursor-pointer items-center justify-center gap-1.5 text-center text-sm font-medium text-primary dark:text-indigo-400" href="#">
+<span class="truncate">Nasıl Çalışır?</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="relative h-20 w-full flex-shrink-0 bg-white/70 shadow-[0_-1px_3px_rgba(0,0,0,0.05)] backdrop-blur-md dark:bg-background-dark/70 dark:shadow-[0_-1px_3px_rgba(255,255,255,0.05)]">
+<div class="flex h-full items-start justify-around pt-3">
+<div class="flex flex-col items-center gap-1 text-primary dark:text-indigo-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-xs font-medium">Groups</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</div>
+</div>
+</nav>
+</div>
+</body></html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .cta-shadow {
+            box-shadow: 0px 10px 20px -5px rgba(83, 72, 234, 0.3);
+        }
+        .nav-shadow {
+            box-shadow: 0 -4px 12px 0 rgba(0, 0, 0, 0.05);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5348ea",
+              "background-light": "#f6f6f8",
+              "background-dark": "#121121",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative mx-auto flex h-[812px] w-[375px] flex-col overflow-hidden border bg-background-light dark:bg-background-dark group/design-root">
+<main class="flex-1 overflow-y-auto px-6">
+<!-- Header Section -->
+<div class="pt-[60px]">
+<h2 class="text-2xl font-semibold text-[#1F2937] dark:text-gray-100 tracking-tight text-left">Merhaba! 👋</h2>
+<p class="mt-2 text-base font-normal text-[#6B7280] dark:text-gray-400">Payça ile grup harcamalarını yönetmeye başla</p>
+</div>
+<!-- Empty State Section -->
+<div class="flex flex-col items-center pt-8">
+<div class="bg-center bg-no-repeat aspect-[280/240] bg-cover w-[280px] h-[240px]" data-alt="3D illustration of three diverse people, a phone with an expense app interface, and floating receipt icons" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsL18FNhd_yyfbuZFp5WoomNmQaZ5Za52MkxEoEQoretsGMHZQtHW1KUfrppWAG0EWnCLgVBVDDagik4q1OTgscw_NwCCbxc3SCR5SQ9OAXaRff-qtX14KsdL4aSAt5vk1DC7rz69dGzJEZlw9u5_cybjFo9tkgNLv7FXozOCkk8Kvkj_QWoGWxLn1fshFUcUKukXcZ4THIteOaJK67u4CuraZqPJtUTt6rQvpLtGrJvm9OdkqKDmqomZ9y6xwOcOTJIrwCXBfQH27");'></div>
+<div class="mt-8 flex w-full max-w-[280px] flex-col items-center gap-2 text-center">
+<p class="text-xl font-semibold leading-tight text-[#111827] dark:text-white">Henüz Hiç Grubun Yok</p>
+<p class="text-sm font-normal leading-normal text-[#6B7280] dark:text-gray-400">Bir grup oluştur, arkadaşlarını ekle ve masrafları paylaşmaya başla</p>
+</div>
+</div>
+</main>
+<!-- Footer Actions -->
+<div class="flex flex-col items-center gap-4 px-6 pb-6 pt-4">
+<button class="flex h-14 w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-[#6366F1] to-[#4F46E5] text-white cta-shadow">
+<span class="material-symbols-outlined text-white text-[24px]">add</span>
+<span class="truncate text-base font-semibold leading-normal">İlk Grubunu Oluştur</span>
+</button>
+<a class="flex cursor-pointer items-center justify-center gap-1.5 text-sm font-medium text-[#4F46E5] dark:text-indigo-400" href="#">
+<span>Nasıl Çalışır?</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="flex h-20 w-full items-start justify-around border-t border-gray-200 bg-white dark:bg-background-dark dark:border-gray-700 nav-shadow">
+<a class="flex h-full w-full flex-col items-center justify-center gap-1 pt-2 text-[#4F46E5] dark:text-indigo-400" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex h-full w-full flex-col items-center justify-center gap-1 pt-2 text-[#6B7280] dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-xs font-medium">Groups</span>
+</a>
+<a class="flex h-full w-full flex-col items-center justify-center gap-1 pt-2 text-[#6B7280] dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</div>
+</body></html>

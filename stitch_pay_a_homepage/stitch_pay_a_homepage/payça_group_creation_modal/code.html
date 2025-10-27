@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create New Group - Payça</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5348ea",
+              "background-light": "#f6f6f8",
+              "background-dark": "#121121",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-900/40 font-display">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-end overflow-hidden antialiased">
+<!-- Modal Container -->
+<div class="relative flex w-full max-w-lg flex-col bg-background-light dark:bg-background-dark shadow-2xl" style="height: 600px; border-top-left-radius: 24px; border-top-right-radius: 24px;">
+<!-- Header with Drag Handle, Title and Close Button -->
+<div class="flex-shrink-0 px-6 pt-4 pb-2">
+<div class="flex h-5 w-full items-center justify-center pb-3">
+<div class="h-1 w-10 rounded-full bg-gray-300 dark:bg-gray-600"></div>
+</div>
+<div class="flex items-center justify-between">
+<h3 class="text-2xl font-semibold leading-tight text-gray-900 dark:text-white">Yeni Grup Oluştur</h3>
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+</div>
+<!-- Form Content -->
+<div class="flex-grow overflow-y-auto px-6">
+<!-- Group Icon Selector -->
+<div class="py-3">
+<p class="pb-3 text-base font-medium text-gray-800 dark:text-gray-200">Grup Simgesi</p>
+<div class="flex gap-3 overflow-x-auto pb-2 -mx-6 px-6">
+<button class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-primary/20 ring-2 ring-primary">
+<p class="text-2xl">🏖️</p>
+</button>
+<button class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+<p class="text-2xl">🏠</p>
+</button>
+<button class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+<p class="text-2xl">✈️</p>
+</button>
+<button class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+<p class="text-2xl">🍔</p>
+</button>
+<button class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+<p class="text-2xl">⚽️</p>
+</button>
+<button class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+<p class="text-2xl">🎉</p>
+</button>
+<button class="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700">
+<p class="text-2xl">💼</p>
+</button>
+</div>
+</div>
+<!-- Group Name & Currency -->
+<div class="flex flex-col gap-5 pt-3">
+<label class="flex flex-col w-full">
+<p class="pb-2 text-base font-medium text-gray-800 dark:text-gray-200">Grup Adı</p>
+<input class="form-input flex h-[52px] w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg border-none bg-gray-50 dark:bg-gray-800 p-4 text-base font-normal leading-normal text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50" placeholder="örn: Bodrum Tatili 2024" value=""/>
+</label>
+<div class="grid grid-cols-2 gap-4">
+<label class="flex flex-col w-full col-span-2">
+<p class="pb-2 text-base font-medium text-gray-800 dark:text-gray-200">Para Birimi</p>
+<select class="form-select h-[52px] w-full appearance-none rounded-lg border-none bg-gray-50 dark:bg-gray-800 p-3.5 pr-10 text-base text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50">
+<option>₺ Türk Lirası</option>
+<option>$ US Dollar</option>
+<option>€ Euro</option>
+</select>
+</label>
+</div>
+<label class="flex flex-col w-full">
+<p class="pb-2 text-base font-medium text-gray-800 dark:text-gray-200">Açıklama (İsteğe bağlı)</p>
+<textarea class="form-textarea w-full resize-none rounded-lg border-none bg-gray-50 dark:bg-gray-800 p-4 text-base font-normal leading-normal text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:outline-0 focus:ring-2 focus:ring-primary/50" placeholder="Grup hakkında kısa bir açıklama..." rows="3" style="height: 96px;"></textarea>
+</label>
+</div>
+<!-- Participants Section -->
+<div class="py-5">
+<p class="pb-3 text-base font-medium text-gray-800 dark:text-gray-200">Katılımcılar</p>
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-center gap-1">
+<img class="h-12 w-12 rounded-full object-cover" data-alt="User avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACDjn-OIDYr6L1eLHz4usvnqAhz30mx0baA8UmodbmDxOoqP0pifcxNLgkJcgoiLAkQBXhstCBHCp3nIMqMIiWXdnmq9tkHJtQL9xN_YOReJB7K-p0ei3wEl_pDMFP3C5_AbT32yyRPI0JwNNtZyBu_cKdpH1hOkhbZwL9mo-uXH26LT1cHOTECQkU7ZBytp7-RhyzuqWioMX9ZW2HZMxM5icOscETP4uvNr_7aRte1Ix4mtXTpcdWM_tMkW0e16vypY6sRsJAFU7c"/>
+<p class="text-xs font-medium text-gray-600 dark:text-gray-400">Sen</p>
+</div>
+<button class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 border-dashed border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800/50">
+<span class="material-symbols-outlined text-2xl text-primary">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="flex flex-shrink-0 flex-col gap-3 px-6 pt-2 pb-6 bg-background-light dark:bg-background-dark">
+<button class="flex h-12 w-full items-center justify-center rounded-xl bg-primary text-base font-semibold text-white shadow-lg shadow-primary/30 transition-transform duration-200 hover:scale-[1.02]">Grubu Oluştur</button>
+<button class="h-10 w-full text-sm font-medium text-gray-600 dark:text-gray-400">İptal</button>
+</div>
+</div>
+</div>
+</body></html>

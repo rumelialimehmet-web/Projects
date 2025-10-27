@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yeni Harcama - Payça</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4F46E5",
+              "primary-light": "#EEF2FF",
+              "text-primary": "#111827",
+              "text-secondary": "#6B7280",
+              "border-color": "#E5E7EB",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.75rem", "lg": "1rem", "xl": "1.25rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-100 flex justify-center">
+<div class="relative w-full max-w-[375px] h-[812px] bg-white font-display overflow-hidden flex flex-col">
+<!-- Top App Bar -->
+<header class="flex items-center bg-white p-4 pb-2 justify-between sticky top-0 z-10 border-b border-border-color">
+<button class="text-text-primary flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-text-primary text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Yeni Harcama</h1>
+</header>
+<!-- Main Content -->
+<main class="flex-1 overflow-y-auto pb-32 px-4">
+<!-- Amount Section -->
+<section class="bg-primary-light rounded-xl p-6 my-4 text-center">
+<div class="flex justify-center items-center">
+<span class="text-5xl font-bold text-text-primary mr-2">₺</span>
+<input class="w-full text-6xl font-bold text-text-primary bg-transparent border-none focus:ring-0 p-0 m-0 text-center placeholder:text-text-primary/30" inputmode="decimal" placeholder="0.00" type="text"/>
+</div>
+<div class="flex gap-2 justify-center mt-6">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-primary text-sm font-medium leading-normal">50₺</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-primary text-sm font-medium leading-normal">100₺</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-primary text-sm font-medium leading-normal">250₺</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white px-4">
+<p class="text-primary text-sm font-medium leading-normal">500₺</p>
+</button>
+</div>
+</section>
+<!-- Form Fields -->
+<div class="space-y-6">
+<!-- Title Input -->
+<div class="flex items-center gap-4 px-4 py-3 rounded-lg border border-border-color">
+<span class="text-2xl">📝</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden text-text-primary focus:outline-0 focus:ring-0 border-none bg-white p-0 text-base font-normal leading-normal placeholder:text-text-secondary" placeholder="Ne için harcandı?" value=""/>
+</div>
+<!-- Category Selector -->
+<div>
+<p class="text-text-secondary text-sm font-medium leading-normal mb-3 px-1">Kategori</p>
+<div class="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary-light pl-4 pr-4 border border-primary">
+<p class="text-primary text-sm font-medium leading-normal">🍕 Yemek</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 pl-4 pr-4">
+<p class="text-text-primary text-sm font-medium leading-normal">🚗 Ulaşım</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 pl-4 pr-4">
+<p class="text-text-primary text-sm font-medium leading-normal">🏠 Kira</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 pl-4 pr-4">
+<p class="text-text-primary text-sm font-medium leading-normal">🛒 Market</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 pl-4 pr-4">
+<p class="text-text-primary text-sm font-medium leading-normal">🎉 Eğlence</p>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-100 pl-4 pr-4">
+<p class="text-text-primary text-sm font-medium leading-normal">➕ Diğer</p>
+</button>
+</div>
+</div>
+<!-- Date & Payer -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center gap-3 text-left w-full p-3 rounded-lg border border-border-color">
+<span class="material-symbols-outlined text-text-secondary">calendar_month</span>
+<div class="flex flex-col">
+<span class="text-xs text-text-secondary">Tarih</span>
+<span class="text-sm font-medium text-text-primary">Bugün, 15 Ocak</span>
+</div>
+</button>
+<button class="flex items-center gap-3 text-left w-full p-3 rounded-lg border border-border-color">
+<img alt="User Avatar" class="h-8 w-8 rounded-full object-cover" data-alt="User Avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX7IUF8ex4NzNUH1MYPrN_Ckaoul_UOyQ0Ds0J3GZXEPNp9sqWZZGtu0Bok_lZeelqjtLKRY5L5oNXlglNP6_I37U6eD61blJFnF0XebFJf8VcJa8UvnVzQD9ANCMRAWlPwptapb39CtR_-vahE1oUCdAf9IpV_jUjJZWw2B1w_ByePTpf-RxNHJFMUc0A-D-2m4o40D5ylngAWKKarde7Wr2w2rpVtK2gOgQ4VtnWp-EZF7vKxhUFq9gS1YmxglZdo9XcHqAlkatK"/>
+<div class="flex flex-col">
+<span class="text-xs text-text-secondary">Ödeyen</span>
+<span class="text-sm font-medium text-text-primary">Sen</span>
+</div>
+</button>
+</div>
+<!-- Split Options -->
+<div class="border border-border-color rounded-lg p-4 space-y-4">
+<div class="flex items-center justify-between">
+<p class="font-medium text-text-primary">Kimler arasında bölünecek?</p>
+<div class="flex items-center gap-2">
+<span class="text-sm text-text-secondary">Tümü</span>
+<button aria-checked="true" class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-primary transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" role="switch">
+<span class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out translate-x-5"></span>
+</button>
+</div>
+</div>
+<div class="flex justify-center -space-x-2">
+<img alt="User 1" class="inline-block h-8 w-8 rounded-full ring-2 ring-white" data-alt="User 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUiwlfz1Nb1LgKp03SBlYgBMGTUBob2c-N-tlCd66X1D2zGEFmiadeW6wTklJG84vbTyNO3qHmDGnrnNKaZT2RfGAHuBYokaAoGirSO1fZ42fGAgT25KSY8V9sz7sT5Q0HO2fCshgynz0T4NDR6CCEL-M_m6inEhi1g6uavCw2hAlv5iDbhcQ7YFmsViXZqUOu-r0oCNe915nt2k3GjRnUmhQo2VZlV4vzegmSvabsOXSfhVId1803HDrZi-CqBdX744fx542M7IDZ"/>
+<img alt="User 2" class="inline-block h-8 w-8 rounded-full ring-2 ring-white" data-alt="User 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1uovAg4B81kwH3Cn382UKg5mmPIBZYc9nts96Fvt8MmxuKsK8ygn1qu_ApLUaiFNvEpfSBpop6IhUZWChIfTg7Nc0wxPZiZ9hIMnMFlZCWoaZ5bE0ttZC9RU-INsuXq7rxhgVnT-j2qjamVqxrihjzqoI8H1r3lUgSHBM6uR8a7J5VwzkrEduNd2mTc05BYeHKlK7H2YPfufGu-BvovPa0wdoXjOm_aFBapa7pTehow61JBGUYtgj_wuI3bmHc3kgRUR4BGHIQWy"/>
+<img alt="User 3" class="inline-block h-8 w-8 rounded-full ring-2 ring-white" data-alt="User 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKFqXNI-IE9O8m6zJnFsVEjg-6r4HxldWYI7Ka3eWUO-40i2aT4NO2vRZEPjPa9NOKx_HG7fDAoIAbezxYq0SG-ybrFlqsKvbGvexCKJHMmdiF-keVETijZwjGH_1Dhj-2KY3vyBSg-jdYiBWUrBtoGcbY8nCyQbxfM6coTy0Q6O7FZMIoGDyErwQpDWCkvlOD3ArZ0qPXqk6esnXd3uLsVN8Ix5BwqUVI8sYUXo_O0weyK91rP4Q5vtX_TLbadmTPQClP_ALVNG-2"/>
+<div class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 ring-2 ring-white text-xs font-medium text-text-secondary">+2</div>
+</div>
+<div class="bg-gray-100 p-1 rounded-lg flex items-center">
+<button class="w-1/3 py-2 text-sm font-semibold text-text-primary bg-white rounded-md shadow-sm">Eşit</button>
+<button class="w-1/3 py-2 text-sm font-medium text-text-secondary">Yüzde</button>
+<button class="w-1/3 py-2 text-sm font-medium text-text-secondary">Özel</button>
+</div>
+</div>
+<!-- Optional Fields -->
+<div class="space-y-2">
+<button class="flex items-center gap-2 text-primary font-medium w-full text-left p-2 rounded-md hover:bg-primary-light">
+<span class="material-symbols-outlined">edit_note</span>
+                        Not Ekle
+                    </button>
+<button class="flex items-center gap-2 text-primary font-medium w-full text-left p-2 rounded-md hover:bg-primary-light">
+<span class="material-symbols-outlined">photo_camera</span>
+                        Fiş/Fotoğraf Ekle
+                    </button>
+</div>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<footer class="absolute bottom-0 left-0 right-0 bg-white p-4 pt-3 border-t border-border-color">
+<div class="flex flex-col items-center gap-3">
+<button class="w-full h-14 rounded-xl bg-primary text-white text-base font-semibold shadow-lg shadow-primary/30 flex items-center justify-center">Harcamayı Kaydet</button>
+<button class="text-text-secondary font-medium">İptal</button>
+</div>
+</footer>
+</div>
+</body></html>

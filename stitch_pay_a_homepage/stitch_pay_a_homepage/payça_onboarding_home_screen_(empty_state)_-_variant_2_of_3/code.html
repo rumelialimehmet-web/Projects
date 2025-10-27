@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça - Group Expense Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4F46E5",
+              "background-light": "#FFFFFF",
+              "background-dark": "#121121",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative mx-auto flex h-screen min-h-[812px] w-full max-w-[375px] flex-col font-display group/design-root overflow-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col px-6">
+<!-- Header Section -->
+<div class="pt-[60px] pb-8">
+<h2 class="text-[#1F2937] dark:text-gray-200 text-[28px] font-semibold leading-tight">Merhaba! 👋</h2>
+<p class="text-[#6B7280] dark:text-gray-400 text-base font-normal leading-normal pt-2">Payça ile grup harcamalarını yönetmeye başla</p>
+</div>
+<!-- Empty State Section -->
+<div class="flex flex-grow flex-col items-center justify-center text-center">
+<div class="flex flex-col items-center gap-6">
+<div class="bg-center bg-no-repeat aspect-video bg-cover w-[280px] h-[240px]" data-alt="3D illustration of three diverse people collaborating around a phone displaying an expense app, with floating receipt icons." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDi1Fei_3YsaGIO3duRoE48wEKVMIQ0A7GLt37rjPMiGQR0zGQ5rrcN2-96BDk1EREXUVanm-qZwERQ51Yh6ua9r2l0yEg_pR4ARbBXdROCrHqDXLZpvTerhlfmsjr9oEZRZ2rNTX4zRoF7oItYMoQP2PHh6_5IFHO5yG7PULiZM70ePro5hW061XhBAijHET9AjTa8hxjjnxXLYk0ZbbGOYD7y5I7a5njjEdVIG0bTD3IgfktJIuuhrAKBwFqW25_VlRUKjBf4jTHu");'></div>
+<div class="flex max-w-[280px] flex-col items-center gap-2 mt-4">
+<p class="text-[#111827] dark:text-gray-100 text-xl font-semibold leading-tight tracking-[-0.015em]">Henüz Hiç Grubun Yok</p>
+<p class="text-[#6B7280] dark:text-gray-400 text-sm font-normal leading-normal">Bir grup oluştur, arkadaşlarını ekle ve masrafları paylaşmaya başla</p>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="pb-6">
+<button class="flex w-full h-[56px] min-w-[84px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-base font-semibold leading-normal tracking-[0.015em] shadow-lg shadow-indigo-500/30">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 600;">add</span>
+<span class="truncate">İlk Grubunu Oluştur</span>
+</button>
+<a class="mt-6 flex cursor-pointer items-center justify-center gap-1.5 text-center text-sm font-medium leading-normal text-primary dark:text-indigo-400" href="#">
+                    Nasıl Çalışır?
+                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="flex h-[80px] w-full items-center gap-2 border-t border-gray-200/80 dark:border-gray-700/50 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2 shadow-[0_-2px_10px_rgba(0,0,0,0.03)]">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary dark:text-indigo-400" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1, 'wght' 600;">home</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#6B7280] dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">group</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Groups</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-[#6B7280] dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
+</a>
+</nav>
+</div>
+</body></html>

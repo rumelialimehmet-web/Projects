@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça - Masrafları Kolayca Paylaş</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5348ea",
+            "background-light": "#f6f6f8",
+            "background-dark": "#121121",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"],
+            "brand": ["Poppins", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          animation: {
+            'fade-in': 'fadeIn 1.5s ease-in-out forwards',
+            'float-1': 'float 8s ease-in-out infinite',
+            'float-2': 'float 12s ease-in-out infinite',
+            'float-3': 'float 10s ease-in-out infinite',
+            'float-4': 'float 15s ease-in-out infinite',
+            'sparkle': 'sparkle 1.5s infinite',
+            'subtle-pulse': 'subtlePulse 2s infinite ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(-20px) rotate(10deg)' },
+            },
+            sparkle: {
+              '0%, 100%': { opacity: '0', transform: 'scale(0.5)' },
+              '50%': { opacity: '1', transform: 'scale(1.2)' },
+            },
+            subtlePulse: {
+              '0%, 100%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.03)' },
+            }
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+      font-size: inherit;
+    }
+    .text-shadow {
+        text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .safe-area-top { padding-top: env(safe-area-inset-top); }
+    .safe-area-bottom { padding-bottom: env(safe-area-inset-bottom); }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#4F46E5] to-[#C4B5FD] font-display animate-fade-in group/design-root" style="height: 100dvh;">
+<!-- Decorative floating elements -->
+<div class="absolute inset-0 z-0 opacity-20">
+<!-- Receipt Icons -->
+<span class="material-symbols-outlined absolute top-[15%] left-[10%] -translate-x-1/2 -translate-y-1/2 text-6xl text-white/50 animate-float-1">receipt_long</span>
+<span class="material-symbols-outlined absolute top-[70%] right-[5%] -translate-x-1/2 -translate-y-1/2 text-5xl text-white/40 animate-float-2">receipt_long</span>
+<!-- Sparkles -->
+<span class="material-symbols-outlined absolute top-[20%] right-[15%] text-2xl text-white animate-sparkle" style="animation-delay: 0.2s;">spark</span>
+<span class="material-symbols-outlined absolute top-[50%] left-[20%] text-xl text-white animate-sparkle" style="animation-delay: 0.5s;">spark</span>
+<span class="material-symbols-outlined absolute bottom-[25%] right-[25%] text-3xl text-white animate-sparkle" style="animation-delay: 0.8s;">spark</span>
+<!-- Turkish Lira Coins -->
+<div class="absolute top-[25%] left-[20%] h-12 w-12 rounded-full border-2 border-white/30 bg-white/20 flex items-center justify-center text-white/80 text-2xl font-bold animate-float-3" style="backdrop-filter: blur(5px);">₺</div>
+<div class="absolute bottom-[20%] left-[10%] h-16 w-16 rounded-full border-2 border-white/30 bg-white/20 flex items-center justify-center text-white/80 text-4xl font-bold animate-float-4" style="backdrop-filter: blur(5px);">₺</div>
+<div class="absolute top-[40%] right-[10%] h-10 w-10 rounded-full border-2 border-white/30 bg-white/20 flex items-center justify-center text-white/80 text-xl font-bold animate-float-2" style="backdrop-filter: blur(5px);">₺</div>
+</div>
+<!-- Friend Avatars at the bottom -->
+<div class="absolute bottom-[-50px] left-1/2 h-[300px] w-[300px] -translate-x-1/2 sm:h-[400px] sm:w-[400px]">
+<div class="relative h-full w-full">
+<img class="absolute left-[50%] top-[0] h-12 w-12 -translate-x-1/2 rounded-full border-2 border-white/50 bg-white/30 object-cover shadow-lg" data-alt="User avatar 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyGh5FVTu8eXEdhhUmQ_AJIQ-3ljvbONxpQyQmxhHs-kRztlDqT4r3okevZtkqRkcMMP4sdYrAkMVW7KKl-qwip7VWb5Q_q7wmq_U4y8Dl0sbNRnkiyKE8apdr7xLUC6pYFGG4U3g2IwKv7yjXXcfsZn5FGhZyHZcermDK2kItfYVk6J8CS8f0MO_HxFySj12NtMyxNGpShrv4XxS4KzE67bCkJAXfLm_GK-Itcspczom789cLS3ABBMWXAeMgqfntbdSv6hgB_M5b" style="transform: translateX(-50%) translateY(0) rotate(0deg) translateY(-150px) rotate(0deg); backdrop-filter: blur(3px);"/>
+<img class="absolute left-[50%] top-[0] h-10 w-10 -translate-x-1/2 rounded-full border-2 border-white/50 bg-white/30 object-cover shadow-lg" data-alt="User avatar 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhlrv8Bc4CNO57oG6QDdBKb3cf6h9mNgcTpvk0LUwzYSwpuBeQXl6UVom33i7-yy7EqdB0Jn19ITyTtgrdj4FNxggA8aNjafBjobnJcpGHvMpK43FK5bGKp3YCHi5ayOzmPueNQIn1DBMmuoKQum8xO9ybQM1B3LkUFw5jjBBQqcstMUKNgsapJAlwBAkpwvxYEy-VHOKK5PNV7oZx-ArfX19DplZikffbtVMfFZbkzvDWTmE1cZVtT9fsal9TweeN5X_ouQJuRYXe" style="transform: translateX(-50%) translateY(0) rotate(60deg) translateY(-150px) rotate(-60deg); backdrop-filter: blur(3px);"/>
+<img class="absolute left-[50%] top-[0] h-14 w-14 -translate-x-1/2 rounded-full border-2 border-white/50 bg-white/30 object-cover shadow-lg" data-alt="User avatar 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJSaAU31fXQs6yiMxVuIvgvu3q2Izsdj5_9Ygm9wRElcucGpPkAuDjRFoz3jv2ce8NvrCDA7dFKnle98FsbFbnpxNFFTYcdlXf6Tw0bPMjD0AuADP6rY-NcRI77-snPbb78eHGyw8ufZF_BzysZgbdKHuhGKfW1lmu-ZIIPV59D5M3iohqJ5D92d5_NRpuneTLKVk3uUvtpvfcHudhapm7FZAWs6dKrSbdTHCTCMYwkxgVu6TmP0T9ojkF2ShyNy3muaY0Oy7CvquX" style="transform: translateX(-50%) translateY(0) rotate(120deg) translateY(-150px) rotate(-120deg); backdrop-filter: blur(3px);"/>
+<img class="absolute left-[50%] top-[0] h-12 w-12 -translate-x-1/2 rounded-full border-2 border-white/50 bg-white/30 object-cover shadow-lg" data-alt="User avatar 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN_lnuzKD9oT9cFFu1N-azRH8zU6056cl5cC8SyAjv0ds9AcRpi5mVG8AvNWtN307ykCp24oy6ux0JI66DUavT5cLlJKzg79pfnhN5roRuawg_AhZLOu7LI_WfGCULujdcr6ZYOwXbzUjzocFggMkoalJiW6qOLi3Bvxzfrs1GFaEqb4egT3NuSHHPUICByZhCN4jH8sK7PZIC7Ekz-egLkQ4Obke4RYUGUq12Z7JVQLSKYsOpsMkANTPavgEKBhVJALvq9J1GV-Ae" style="transform: translateX(-50%) translateY(0) rotate(-60deg) translateY(-150px) rotate(60deg); backdrop-filter: blur(3px);"/>
+<img class="absolute left-[50%] top-[0] h-10 w-10 -translate-x-1/2 rounded-full border-2 border-white/50 bg-white/30 object-cover shadow-lg" data-alt="User avatar 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuASQgZbfruhXedq-vM1Zht0PFBMENgYH7rWrVPTWBrgU8nWmuI-TbuzZ3GsUtl_dTk9Tkay33KaoJp9u1tcXtkM4Qx3O3dEqrMBt5oHGIuwrEprCQ7JbELbMNI0mIXItBE89wjM-b6NUJGoVcrgMxM9AegX8dJfpRm1Jk7okP84kWdPmvxcp4W-CBBJDHlz85FWLYJSmdf7YCn5asramlE7Tbsvj36yKjaTVggcYT-wdKtHKujmaJ4Og5cjC53tHVaSJKxeX6CHzu" style="transform: translateX(-50%) translateY(0) rotate(-120deg) translateY(-150px) rotate(120deg); backdrop-filter: blur(3px);"/>
+</div>
+</div>
+<main class="relative z-10 flex flex-grow flex-col items-center justify-center p-4 text-center safe-area-top safe-area-bottom">
+<!-- Logo and Tagline -->
+<div class="flex flex-col items-center justify-center flex-grow">
+<h1 class="text-white text-6xl font-semibold tracking-tight text-shadow font-brand animate-subtle-pulse" style="font-size: 64px;">Payça</h1>
+<p class="text-white/70 text-sm font-normal leading-normal mt-2 font-display">Masrafları Kolayca Paylaş</p>
+</div>
+<!-- Loading Indicator -->
+<div class="flex flex-col items-center gap-3 pb-8">
+<div class="h-8 w-8 animate-spin rounded-full border-2 border-white/20 border-t-white" role="status">
+<span class="sr-only">Yükleniyor...</span>
+</div>
+<p class="text-white/80 text-xs font-normal leading-normal">Yükleniyor...</p>
+</div>
+</main>
+</div>
+</body></html>
