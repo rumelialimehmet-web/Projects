@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça - Giriş Yap veya Kaydol</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5348ea",
+            "background-light": "#f6f6f8",
+            "background-dark": "#121121",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col justify-end bg-black/60 group/design-root overflow-x-hidden">
+<div class="absolute inset-0">
+</div>
+<div class="flex flex-col bg-white dark:bg-gray-900 rounded-t-xl" style="box-shadow: 0 -10px 25px -5px rgba(0, 0, 0, 0.1), 0 -4px 6px -2px rgba(0, 0, 0, 0.05);">
+<div class="relative px-6 pt-4 pb-8">
+<div class="absolute top-4 right-6">
+<button class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined !text-xl">close</span>
+</button>
+</div>
+<button class="flex h-5 w-full items-center justify-center">
+<div class="h-1 w-10 rounded-full bg-[#D1D5DB] dark:bg-gray-700"></div>
+</button>
+<h3 class="text-[#111827] dark:text-white tracking-tight text-2xl font-bold leading-tight text-center pb-2 pt-5">Giriş Yap veya Kaydol</h3>
+<div class="mt-5 space-y-5">
+<label class="flex flex-col">
+<p class="text-[#374151] dark:text-gray-300 text-sm font-medium leading-normal pb-2">E-posta</p>
+<input class="form-input flex w-full resize-none overflow-hidden rounded-lg text-[#111827] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#E5E7EB] dark:border-gray-700 bg-[#F9FAFB] dark:bg-gray-800 h-[52px] placeholder:text-gray-400 p-3 text-base font-normal leading-normal" placeholder="eposta@adresiniz.com" value=""/>
+</label>
+<label class="flex flex-col">
+<p class="text-[#374151] dark:text-gray-300 text-sm font-medium leading-normal pb-2">Şifre</p>
+<div class="relative flex w-full items-stretch">
+<input class="form-input flex w-full resize-none overflow-hidden rounded-lg text-[#111827] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#E5E7EB] dark:border-gray-700 bg-[#F9FAFB] dark:bg-gray-800 h-[52px] placeholder:text-gray-400 p-3 pr-12 text-base font-normal leading-normal" placeholder="Şifrenizi girin" type="password" value=""/>
+<button class="absolute inset-y-0 right-0 flex items-center justify-center pr-3 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
+<span class="material-symbols-outlined !text-xl">visibility</span>
+</button>
+</div>
+</label>
+<div class="text-right">
+<a class="inline-flex items-center gap-1.5 text-sm font-medium text-[#4F46E5] dark:text-indigo-400 hover:underline" href="#">
+<span class="material-symbols-outlined !text-base !font-normal">key</span>
+              Şifremi Unuttum?
+            </a>
+</div>
+<button class="flex w-full items-center justify-center rounded-lg h-12 px-6 text-base font-semibold text-white shadow-lg shadow-primary/30" style="background: linear-gradient(to right, #6366F1, #4F46E5);">Giriş Yap</button>
+<div class="flex items-center gap-4 py-2">
+<hr class="flex-1 border-t border-gray-200 dark:border-gray-700"/>
+<p class="text-xs font-medium text-gray-400 dark:text-gray-500">veya</p>
+<hr class="flex-1 border-t border-gray-200 dark:border-gray-700"/>
+</div>
+<div class="space-y-3">
+<button class="flex w-full items-center justify-center gap-3 rounded-lg border border-gray-300 dark:border-gray-700 h-12 px-6 text-sm font-semibold text-gray-800 dark:text-white bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
+<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.9999 12.24C21.9999 11.45 21.9399 10.68 21.8099 9.94H12.2399V14.28H17.8399C17.6199 15.61 16.9499 16.75 15.9199 17.44V20.14H19.5599C21.1499 18.66 21.9999 16.23 21.9999 12.24Z" fill="#4285F4"></path>
+<path d="M12.2399 22.0001C15.2299 22.0001 17.7299 21.0101 19.5599 19.1401L15.9199 16.4401C14.9299 17.1001 13.6799 17.5101 12.2399 17.5101C9.43992 17.5101 7.08992 15.5801 6.22992 13.0101H2.47992V15.7901C4.24992 19.3301 7.91992 22.0001 12.2399 22.0001Z" fill="#34A853"></path>
+<path d="M6.22992 13.01C5.97992 12.29 5.82992 11.51 5.82992 10.71C5.82992 9.91 5.97992 9.13 6.22992 8.41V5.63H2.47992C1.72992 7.07 1.23992 8.82 1.23992 10.71C1.23992 12.6 1.72992 14.35 2.47992 15.79L6.22992 13.01Z" fill="#FBBC05"></path>
+<path d="M12.2399 3.91003C13.8299 3.91003 15.3199 4.47003 16.4899 5.58003L19.6399 2.43003C17.7199 0.920031 15.2299 0 12.2399 0C7.91992 0 4.24992 2.67 2.47992 6.21L6.22992 8.99C7.08992 6.42 9.43992 3.91003 12.2399 3.91003Z" fill="#EA4335"></path>
+</svg>
+              Google ile Devam Et
+            </button>
+<button class="flex w-full items-center justify-center gap-3 rounded-lg border border-gray-300 dark:border-gray-700 h-12 px-6 text-sm font-semibold text-gray-800 dark:text-white bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700">
+<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.228 17.765C16.818 17.915 16.408 18.065 15.778 18.235C15.158 18.395 14.618 18.475 14.158 18.475C12.878 18.475 11.908 18.065 11.248 17.245C10.588 16.425 10.258 15.295 10.258 13.855C10.258 12.565 10.608 11.535 11.308 10.765C12.008 9.995 12.928 9.615 14.068 9.615C14.548 9.615 15.108 9.705 15.748 9.885C16.388 10.065 16.858 10.225 17.158 10.365L16.928 11.665C16.518 11.475 16.038 11.315 15.488 11.185C14.938 11.055 14.478 10.995 14.108 10.995C13.438 10.995 12.918 11.205 12.548 11.625C12.178 12.045 11.998 12.725 11.998 13.665C11.998 14.635 12.198 15.355 12.598 15.825C12.998 16.295 13.568 16.535 14.308 16.535C14.698 16.535 15.148 16.465 15.658 16.325C16.168 16.185 16.668 15.995 17.158 15.755L17.228 17.765ZM12.018 5.75498C12.018 4.88498 12.318 4.20498 12.918 3.71498C13.518 3.22498 14.288 2.97498 15.228 2.97498C15.748 2.97498 16.468 3.09498 17.388 3.33498L17.858 3.48498L17.658 4.79498L17.148 4.67498C16.398 4.47498 15.828 4.37498 15.438 4.37498C14.678 4.37498 14.158 4.59498 13.878 5.03498C13.598 5.47498 13.458 6.13498 13.458 7.01498V8.45498H16.288V9.69498H13.458V13.805H11.988V4.82498L12.018 5.75498Z"></path>
+</svg>
+              Apple ile Devam Et
+            </button>
+</div>
+</div>
+<p class="text-center text-sm text-gray-600 dark:text-gray-400 mt-8">
+          Hesabın yok mu?
+          <a class="font-semibold text-[#4F46E5] dark:text-indigo-400 hover:underline" href="#">Kaydol</a>
+</p>
+</div>
+</div>
+</div>
+</body></html>
