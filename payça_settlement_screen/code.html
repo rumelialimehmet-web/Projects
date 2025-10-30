@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça - Borçlarım / Alacaklarım</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#5348ea",
+              "background-light": "#f6f6f8",
+              "background-dark": "#121121",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 24px;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pt-6 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start" data-alt="Placeholder for a back button or menu icon">
+<!-- Icon can be added here if needed -->
+</div>
+<h1 class="text-gray-900 dark:text-white text-2xl font-bold leading-tight tracking-tight flex-1 text-center">Borçlarım / Alacaklarım</h1>
+<div class="flex size-12 shrink-0 items-center justify-end" data-alt="Placeholder for an action icon">
+<!-- Icon can be added here if needed -->
+</div>
+</div>
+<!-- Chips Filter -->
+<div class="flex gap-3 px-4 py-2 overflow-x-auto">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-900/5 dark:bg-white/5 pl-4 pr-2">
+<p class="text-gray-900 dark:text-white text-sm font-medium leading-normal">Tüm Gruplar</p>
+<span class="material-symbols-outlined text-gray-900 dark:text-white" style="font-size: 20px;">expand_more</span>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-900/5 dark:bg-white/5 px-4">
+<p class="text-gray-700 dark:text-gray-300 text-sm font-medium leading-normal">İspanya Gezisi</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-gray-900/5 dark:bg-white/5 px-4">
+<p class="text-gray-700 dark:text-gray-300 text-sm font-medium leading-normal">Ofis Öğle Yemeği</p>
+</button>
+</div>
+</header>
+<main class="flex flex-col flex-1 px-4 py-4">
+<!-- Stats Section -->
+<div class="flex flex-col gap-4">
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+<p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">Toplam Borcun</p>
+<p class="text-red-500 tracking-tight text-xl font-semibold leading-tight">₺150,75</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
+<p class="text-gray-600 dark:text-gray-400 text-sm font-medium leading-normal">Toplam Alacağın</p>
+<p class="text-green-500 tracking-tight text-xl font-semibold leading-tight">₺45,50</p>
+</div>
+</div>
+<!-- Single Button CTA -->
+<div class="flex">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 flex-1 bg-gradient-to-r from-indigo-500 to-indigo-400 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-indigo-500/20">
+<span class="truncate">Hemen Hesaplaş</span>
+</button>
+</div>
+</div>
+<!-- List Section -->
+<div class="flex flex-col gap-4 mt-6">
+<!-- Section Header -->
+<div class="flex justify-between items-center">
+<h2 class="text-lg font-bold text-gray-900 dark:text-white">Detaylar</h2>
+<a class="text-sm font-medium text-primary" href="#">Tümünü Gör</a>
+</div>
+<!-- List Items -->
+<div class="flex flex-col gap-3">
+<!-- List Item 1: Debt -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-3 rounded-xl min-h-[72px] justify-between border border-gray-200 dark:border-gray-700">
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Profile picture of Eren Yan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyTAr9FbQVobB73I_5sWuXYyvumUHVeyvQf-DPRdi7pp5PC7DvhJJToiqpI_5Ud4IRwRJWvhyJ7vcnN9yvlcuwtLe_0_8BgJvxNCpsFdOgN9jZUqlli42ySrDTancsG7DMS3_76LpMRTIooOK2U6cC-0WW0W81AV_0ammt-eRuD44WOYJur8Ve1mOFfwni2_cBhkb6lyyFO8fKquXnhYa7Ob0S2bgJByMIdnTjdkCHTX9n5OOea-styY_hSAYHUVakiQzwsuOKBzCz"/>
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal line-clamp-1">Eren Yan</p>
+<p class="text-red-500 text-sm font-medium leading-normal line-clamp-2">-₺150,75 <span class="text-gray-500 dark:text-gray-400 font-normal">• İspanya Gezisi</span></p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-primary/10 text-primary dark:bg-primary/20 dark:text-indigo-300 text-sm font-bold leading-normal w-fit">
+<span class="truncate">Öde</span>
+</button>
+</div>
+</div>
+<!-- List Item 2: Receivable -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-3 rounded-xl min-h-[72px] justify-between border border-gray-200 dark:border-gray-700">
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Profile picture of Ayşe Yılmaz" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYLJkm7Xy4SyFZmsNqUyQf09DlyTc20j_0hMwws_FI0kE9TbiUjVJBYJ5sm7e2Zr2DpjbOO_LBZwtRJtWXKXcpYcfcTZoQUo-Ckb6sl9AxmUi9XPrAz_IsCmDryFF8ABicypCKGTS2SZkXlPwsB4lbpA1lDzAk8aA2pWvw3JhtXzhQ3D0Un6lpzV3EdVegwa7WIOxUT0m6v_ZguRo3338PvQzcrVoIEfGii_i2NwWm9kQL7Va5K5jNZ1PrwtCMQI-kkjK0xwlahPXO"/>
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal line-clamp-1">Ayşe Yılmaz</p>
+<p class="text-green-500 text-sm font-medium leading-normal line-clamp-2">+₺25,50 <span class="text-gray-500 dark:text-gray-400 font-normal">• Ofis Öğle Yemeği</span></p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-bold leading-normal w-fit">
+<span class="truncate">Hatırlat</span>
+</button>
+</div>
+</div>
+<!-- List Item 3: Receivable -->
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800 p-3 rounded-xl min-h-[72px] justify-between border border-gray-200 dark:border-gray-700">
+<div class="flex items-center gap-4">
+<img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-12 w-12" data-alt="Profile picture of Mehmet Kaya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZc-Ao7j7hQLAQ-zuA6t4grGN2TM2TxWzYE_s0qB7sCZy5SLLCCVFbgoNTKpcaxorrMaFp4RknSfPYbWt_kb11aXkzOwdC-I38gGIC-33AWQu3tN5ZjIjczBINBAh_gjnSzX41HXa7xjOhffaL7TSQ9fk_TEyLv7HXwgnznb5fpXU-QlYhsfsiJBzQlyDnuDp8VY8_cFeRpq2gP8DwsuolTV2gyZclCVYTranx29W97NOYi4a1pwTtAn5jr5w5JcbEs0IVpIWZMGlf"/>
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 dark:text-white text-base font-medium leading-normal line-clamp-1">Mehmet Kaya</p>
+<p class="text-green-500 text-sm font-medium leading-normal line-clamp-2">+₺20,00 <span class="text-gray-500 dark:text-gray-400 font-normal">• Sinema Biletleri</span></p>
+</div>
+</div>
+<div class="shrink-0">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 px-4 bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 text-sm font-bold leading-normal w-fit">
+<span class="truncate">Hatırlat</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State Section (conditionally rendered) -->
+<!-- 
+            <div class="flex flex-col items-center justify-center text-center p-8 mt-10 flex-1">
+                <div class="flex items-center justify-center h-24 w-24 rounded-full bg-green-100 dark:bg-green-900/50 mb-6">
+                     <span class="material-symbols-outlined text-green-500" style="font-size: 48px;">task_alt</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Tüm hesaplar kapandı!</h3>
+                <p class="text-gray-600 dark:text-gray-400 mt-2 max-w-xs">Şu anda ödenmemiş borcun veya bekleyen alacağın yok. Harika iş!</p>
+            </div>
+            -->
+</main>
+</div>
+</body></html>
