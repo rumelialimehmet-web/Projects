@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça Onboarding</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5348ea",
+            "background-light": "#f6f6f8",
+            "background-dark": "#121121",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .checkbox-tick-svg {
+        --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+    }
+    .green-check {
+      background-image: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27%2316a34a%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative mx-auto flex h-full min-h-screen w-full max-w-[375px] flex-col bg-gradient-to-b from-primary/10 to-white group/design-root dark:from-primary/30 dark:to-background-dark overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="flex items-center p-4 pb-2 justify-between">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200 text-3xl">calculate</span>
+<h1 class="text-[#111827] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] ml-2">Payça</h1>
+</div>
+<div class="flex items-center justify-end">
+<a class="text-gray-500 dark:text-gray-400 text-base font-bold leading-normal tracking-[0.015em] shrink-0" href="#">Atla</a>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex flex-1 flex-col px-4">
+<!-- Illustration -->
+<div class="flex w-full grow items-center justify-center py-3">
+<div class="w-[327px] h-[360px] bg-center bg-no-repeat bg-contain" data-alt="Animated phone mockup showing app interface with expense splitting, a calculator, numbers, and money flowing between people icons" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBB2yJ9I_Dr0cvDr17jr4wKpvYcOXHiyIAuJOGsQZNN0qicHVpIUkTroXOhW5kDeCJTefp7QcNytDpTToqTKcvDKkdRShgoGgDsK-suXJBZO2_j3yZVltf0VlDOvbVMDFkjjPTnjLXApqjPA05A7q8eWqiCPgzRyLKSgkuQP7bUNaLujebGK3IQYd92I5HqjAfXZOn-GN4oyPIazCNMvz8vwURyUEaS_JRnK6NK8i7wZoXLmtgAXuWkjZyxt778fzSP05pPFctraU7a");'></div>
+</div>
+<!-- Text Content -->
+<div class="text-center">
+<h2 class="text-[#111827] dark:text-white tracking-tight text-[28px] font-bold leading-tight pb-3">Otomatik Hesaplaşma</h2>
+<p class="text-[#6B7280] dark:text-gray-400 text-base font-normal leading-normal pb-3">Kim kime ne kadar borçlu, anında hesapla. Karmaşık hesaplarla uğraşma.</p>
+</div>
+<!-- Feature List -->
+<div class="py-4">
+<div class="flex gap-x-3 py-3 items-center">
+<div class="flex size-5 shrink-0 items-center justify-center rounded-full bg-green-500/20">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400 !text-base">done</span>
+</div>
+<p class="text-[#374151] dark:text-gray-300 text-[15px] font-medium leading-normal">Eşit veya özel bölme seçenekleri</p>
+</div>
+<div class="flex gap-x-3 py-3 items-center">
+<div class="flex size-5 shrink-0 items-center justify-center rounded-full bg-green-500/20">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400 !text-base">done</span>
+</div>
+<p class="text-[#374151] dark:text-gray-300 text-[15px] font-medium leading-normal">Çoklu para birimi desteği</p>
+</div>
+<div class="flex gap-x-3 py-3 items-center">
+<div class="flex size-5 shrink-0 items-center justify-center rounded-full bg-green-500/20">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400 !text-base">done</span>
+</div>
+<p class="text-[#374151] dark:text-gray-300 text-[15px] font-medium leading-normal">Fotoğrafla fiş okuma özelliği</p>
+</div>
+</div>
+</main>
+<!-- Footer Navigation -->
+<footer class="p-6 pt-2">
+<!-- Progress Indicator -->
+<div class="flex justify-center items-center gap-2 mb-6">
+<div class="w-2 h-2 rounded-full border border-gray-400 bg-transparent"></div>
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<div class="w-2 h-2 rounded-full border border-gray-400 bg-transparent"></div>
+</div>
+<!-- CTA Button -->
+<button class="flex w-full items-center justify-center gap-x-2 rounded-lg bg-primary px-6 py-4 text-center text-base font-bold text-white shadow-sm hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2 dark:ring-offset-background-dark">
+<span>İleri</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<!-- Swipe Hint -->
+<div class="flex justify-center mt-4 h-6">
+<span class="material-symbols-outlined text-gray-400 animate-pulse">swipe_left</span>
+</div>
+</footer>
+</div>
+</body></html>

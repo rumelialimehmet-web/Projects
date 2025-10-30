@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Payça - Bildirimler</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#5348ea",
+            "background-light": "#f6f6f8",
+            "background-dark": "#121121",
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative w-full max-w-[375px] mx-auto min-h-screen flex-col group/design-root overflow-x-hidden bg-white dark:bg-background-dark">
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-white dark:bg-background-dark pt-5">
+<div class="flex items-center justify-between px-4 pb-3">
+<h2 class="text-[#111827] dark:text-white tracking-light text-[28px] font-bold leading-tight">Bildirimler</h2>
+<p class="text-primary text-sm font-medium leading-normal underline">Tümünü Okundu İşaretle</p>
+</div>
+<!-- Tabs -->
+<div class="pb-3">
+<div class="flex border-b border-[#E5E7EB] dark:border-gray-700 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-[13px] pt-4" href="#">
+<p class="text-primary text-sm font-bold leading-normal tracking-[0.015em]">Tümü</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#6B7280] dark:text-gray-400 pb-[13px] pt-4" href="#">
+<p class="text-[#6B7280] dark:text-gray-400 text-sm font-bold leading-normal tracking-[0.015em]">Okunmadı</p>
+</a>
+</div>
+</div>
+</header>
+<!-- Notifications List -->
+<main class="flex flex-col gap-y-1.5 px-4 pb-20">
+<!-- Section: BUGÜN -->
+<div class="sticky top-[125px] z-[5] bg-white dark:bg-background-dark -mx-4">
+<h4 class="text-[#6B7280] dark:text-gray-400 text-[13px] font-semibold leading-normal tracking-[0.015em] px-4 py-2 uppercase">BUGÜN</h4>
+</div>
+<!-- Unread Notification: Yeni Harcama -->
+<div class="relative flex flex-col gap-2 bg-[#EEF2FF] dark:bg-primary/20 p-4 rounded-lg border-l-4 border-primary">
+<div class="flex items-start gap-3">
+<div class="text-[#111827] dark:text-white text-xl flex items-center justify-center shrink-0">💸</div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="text-[#111827] dark:text-white text-base font-semibold leading-normal">Yeni Harcama</p>
+<p class="text-[#374151] dark:text-gray-300 text-sm font-normal leading-normal mt-0.5">Ahmet Yılmaz 'Akşam Yemeği' grubuna yeni bir harcama ekledi: <span class="font-medium text-[#111827] dark:text-white">Pizza</span>.</p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pl-9">
+<p class="text-[#6B7280] dark:text-gray-400 text-xs">Akşam Yemeği • şimdi</p>
+</div>
+</div>
+<!-- Unread Notification: Ödeme Talebi -->
+<div class="relative flex flex-col gap-2 bg-[#EEF2FF] dark:bg-primary/20 p-4 rounded-lg border-l-4 border-primary">
+<div class="flex items-start gap-3">
+<div class="text-[#111827] dark:text-white text-xl flex items-center justify-center shrink-0">📨</div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="text-[#111827] dark:text-white text-base font-semibold leading-normal">Ödeme Talebi</p>
+<p class="text-[#374151] dark:text-gray-300 text-sm font-normal leading-normal mt-0.5">Zeynep Kaya, 'Tatil Masrafları' grubundaki borcun için <span class="font-medium text-[#111827] dark:text-white">₺250,00</span> talep etti.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-3 pl-9">
+<button class="flex items-center justify-center h-9 px-4 rounded text-primary dark:text-primary dark:hover:bg-primary/20 text-sm font-medium border border-primary">Reddet</button>
+<button class="flex items-center justify-center h-9 px-4 rounded bg-primary text-white text-sm font-medium">Şimdi Öde</button>
+</div>
+<div class="flex items-center justify-between mt-2 pl-9">
+<p class="text-[#6B7280] dark:text-gray-400 text-xs">Tatil Masrafları • 15dk önce</p>
+</div>
+</div>
+<!-- Section: DÜN -->
+<div class="sticky top-[125px] z-[5] bg-white dark:bg-background-dark -mx-4">
+<h4 class="text-[#6B7280] dark:text-gray-400 text-[13px] font-semibold leading-normal tracking-[0.015em] px-4 py-2 uppercase">DÜN</h4>
+</div>
+<!-- Read Notification: Grup Daveti -->
+<div class="relative flex flex-col gap-2 bg-white dark:bg-background-dark dark:border dark:border-gray-700 p-4 rounded-lg border-l-4 border-gray-200 dark:border-l-gray-600">
+<div class="flex items-start gap-3">
+<div class="text-[#111827] dark:text-white text-xl flex items-center justify-center shrink-0">💌</div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="text-[#111827] dark:text-white text-base font-semibold leading-normal">Grup Daveti</p>
+<p class="text-[#374151] dark:text-gray-300 text-sm font-normal leading-normal mt-0.5">Mehmet Öztürk sizi 'Ofis Öğle Yemeği' grubuna davet etti.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-3 pl-9">
+<button class="flex items-center justify-center h-9 px-4 rounded text-primary dark:text-primary dark:hover:bg-primary/20 text-sm font-medium border border-primary">Reddet</button>
+<button class="flex items-center justify-center h-9 px-4 rounded bg-primary text-white text-sm font-medium">Katıl</button>
+</div>
+<div class="flex items-center justify-between mt-2 pl-9">
+<p class="text-[#6B7280] dark:text-gray-400 text-xs">Ofis Öğle Yemeği • 14:30</p>
+</div>
+</div>
+<!-- Read Notification: Ödeme Onaylandı -->
+<div class="relative flex flex-col gap-2 bg-white dark:bg-background-dark dark:border dark:border-gray-700 p-4 rounded-lg border-l-4 border-gray-200 dark:border-l-gray-600">
+<div class="flex items-start gap-3">
+<div class="text-[#111827] dark:text-white text-xl flex items-center justify-center shrink-0">✅</div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="text-[#111827] dark:text-white text-base font-semibold leading-normal">Ödeme Onaylandı</p>
+<p class="text-[#374151] dark:text-gray-300 text-sm font-normal leading-normal mt-0.5">Ayşe Demir'e yaptığın <span class="font-medium text-[#111827] dark:text-white">₺75,50</span> ödeme onaylandı.</p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pl-9">
+<p class="text-[#6B7280] dark:text-gray-400 text-xs">Kira &amp; Faturalar • 11:05</p>
+</div>
+</div>
+<!-- Section: BU HAFTA -->
+<div class="sticky top-[125px] z-[5] bg-white dark:bg-background-dark -mx-4">
+<h4 class="text-[#6B7280] dark:text-gray-400 text-[13px] font-semibold leading-normal tracking-[0.015em] px-4 py-2 uppercase">BU HAFTA</h4>
+</div>
+<!-- Read Notification: Hatırlatma -->
+<div class="relative flex flex-col gap-2 bg-white dark:bg-background-dark dark:border dark:border-gray-700 p-4 rounded-lg border-l-4 border-gray-200 dark:border-l-gray-600">
+<div class="flex items-start gap-3">
+<div class="text-[#111827] dark:text-white text-xl flex items-center justify-center shrink-0">🔔</div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="text-[#111827] dark:text-white text-base font-semibold leading-normal">Hatırlatma</p>
+<p class="text-[#374151] dark:text-gray-300 text-sm font-normal leading-normal mt-0.5">'Sinema Biletleri' grubundaki <span class="font-medium text-[#111827] dark:text-white">₺45,00</span> borcunu ödemeyi unutma.</p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pl-9">
+<p class="text-[#6B7280] dark:text-gray-400 text-xs">Sinema Biletleri • Salı</p>
+</div>
+</div>
+<!-- Read Notification: Haftalık Özet -->
+<div class="relative flex flex-col gap-2 bg-white dark:bg-background-dark dark:border dark:border-gray-700 p-4 rounded-lg border-l-4 border-gray-200 dark:border-l-gray-600">
+<div class="flex items-start gap-3">
+<div class="text-[#111827] dark:text-white text-xl flex items-center justify-center shrink-0">📊</div>
+<div class="flex flex-col justify-center flex-grow">
+<p class="text-[#111827] dark:text-white text-base font-semibold leading-normal">Haftalık Özet</p>
+<p class="text-[#374151] dark:text-gray-300 text-sm font-normal leading-normal mt-0.5">Geçen haftaki grup harcamaların hazır. Göz atmak için tıkla.</p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pl-9">
+<p class="text-[#6B7280] dark:text-gray-400 text-xs">Payça • Pazartesi</p>
+</div>
+</div>
+<!-- Empty State Example -->
+<!-- 
+      <div class="flex flex-col items-center justify-center text-center pt-24">
+        <span class="material-symbols-outlined text-7xl text-gray-400 dark:text-gray-500">notifications_off</span>
+        <h3 class="text-lg font-semibold text-[#111827] dark:text-white mt-4">Bildirim Yok</h3>
+        <p class="text-[#6B7280] dark:text-gray-400 mt-1 text-sm">Yeni bir bildirim olduğunda<br>burada görünecek.</p>
+      </div> 
+      -->
+</main>
+</div>
+</body></html>
